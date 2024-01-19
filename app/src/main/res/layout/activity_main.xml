@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/mainToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:minHeight="?attr/actionBarSize"
+                android:elevation="4dp"
+                app:title=""
+                android:background="@color/orange"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bouttonNouveauJoueur"
+            app:cornerRadius="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acceuil_bt_newJoueur"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            style="@style/Button.ALL"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp">
+                <TextView
+                    android:id="@+id/label_player1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acceuil_label_Player1"
+                    android:textStyle="bold"
+                    android:visibility="invisible"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_player1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/acceuil_edit_Player"
+                    android:visibility="invisible">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/label_player2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acceuil_label_Player2"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_player2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/acceuil_edit_Player"
+                android:visibility="invisible">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bouttonConfirmer"
+                app:cornerRadius="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acceuil_bt_confirm"
+                android:textStyle="bold"
+                android:layout_margin="80dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                style="@style/Button.ALL"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

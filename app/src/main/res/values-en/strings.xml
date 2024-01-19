@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SpeedQuiz</string>
+    <string name="acceuil_bt_newJoueur">New Player</string>
+    <string name="acceuil_label_Player1">Player 1</string>
+    <string name="acceuil_label_Player2">Player 2</string>
+    <string name="acceuil_edit_Player">Name</string>
+    <string name="acceuil_bt_confirm">Confirm</string>
+
+    <string name="activity_game_label_Player1">Player 1</string>
+    <string name="activity_game_label_Player2">Player 2</string>
+    <string name="activity_game_label_score_Player1">0</string>
+    <string name="activity_game_label_score_Player2">0</string>
+    <string name="activity_game_label_question_Player1">Question for Player 1</string>
+    <string name="activity_game_label_question_Player2">Question for Player 2</string>
+    <string name="activity_game_bt_restart">Play Again</string>
+    <string name="activity_game_bt_Home">Menu</string>
+    <string name="restart_game">Restart game ?</string>
+
+    <string name="menu_question">Question</string>
+    <string name="menu_settings">Settings</string>
+</resources>
